@@ -1,0 +1,150 @@
+
+
+.main-content-wrapper {
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.party-details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.party-info, .bill-info {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+  padding: 10px;
+  flex: 4;
+}
+
+.party-info {
+  max-width: 514px;
+}
+
+.bill-info {
+  flex: 1;
+}
+
+.party-info div, .bill-info div {
+  margin-bottom: 10px;
+}
+
+.party-info input, .bill-info input {
+  border: none;
+  border-bottom: 1px solid #000;
+  margin-left: 10px;
+  font-size: 16px;
+  width: calc(100% - 20px);
+}
+
+.item-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.item-table th, .item-table td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: center;
+}
+
+.item-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.item-table td input {
+  border: none;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.total strong {
+  margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .party-details {
+    flex-wrap: nowrap;
+  }
+
+  .party-info {
+    width: 404px;
+  }
+
+  .party-info, .bill-info {
+    flex: 1 1 auto;
+  }
+
+  .party-info input, .bill-info input {
+    width: calc(100% - 20px);
+  }
+
+  .item-table th, .item-table td {
+    font-size: 12px; /* Reduce font size for mobile */
+  }
+
+  .item-table td input {
+    font-size: 12px; /* Reduce font size for mobile */
+  }
+
+  .main-content-wrapper {
+    overflow-x: auto; /* Enable horizontal scrolling */
+  }
+}
+
+@media (min-width: 768px) {
+  .item-table th:nth-child(2) {
+    width: 50%;
+  }
+
+  .item-table th:nth-child(3) {
+    width: 10%;
+  }
+
+  .item-table th:nth-child(4),
+  .item-table th:nth-child(5) {
+    width: 15%;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid b;
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-right {
+  flex: 1;
+  text-align: -webkit-center;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid #000; /* Add bottom border */
+}
+
+.total strong {
+  margin-right: 10px;
+}

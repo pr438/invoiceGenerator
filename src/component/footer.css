@@ -1,0 +1,45 @@
+.footer {
+    border-top: 1px solid #000;
+    padding: 10px;
+  }
+  
+  .rules {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .rules-list {
+    padding-left: 15px;
+  }
+  
+  .signature {
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  .signature div {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .signature-line {
+    border-top: 1px solid #000;
+    width: 200px;
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  @media (max-width: 767px) {
+    .rules {
+      font-size: 12px;
+    }
+  
+    .signature div {
+      justify-content: flex-start;
+    }
+  
+    .signature-line {
+      width: 100%;
+    }
+  }
+  

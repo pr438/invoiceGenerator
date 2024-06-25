@@ -1,0 +1,15 @@
+.invoice {
+    border: 2px solid #000; /* Add border to the main div */
+    margin: 8px;
+    background-color: #fff; /* Ensure background is white for printing */
+    overflow-x: overlay;
+    width: 800px;
+  }
+  
+  .print-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
