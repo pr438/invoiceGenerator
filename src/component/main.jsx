@@ -18,10 +18,7 @@ const Main = () => {
     calculateGrandTotal(updatedItems);
   };
 
-  const addItem = () => {
-    setItems([...items, { description: '', km: '', rate: '', total: '' }]);
-  };
-
+  
   const calculateGrandTotal = (items) => {
     const total = items.reduce((acc, item) => acc + (parseFloat(item.total) || 0), 0);
     setGrandTotal(total);
